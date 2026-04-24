@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;NGO Launchpad: Malaysia Setup Guide&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://unpkg.com/lucide@latest"&gt;&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap');</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Inter', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.step-content {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>animation: fadeIn 0.4s ease-out forwards;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.step-content.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>display: block;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fadeIn {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>from { opacity: 0; transform: translateY(10px); }</p>
+<p class="p1"><span class="Apple-converted-space">            </span>to { opacity: 1; transform: translateY(0); }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-button.active {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-color: #4f46e5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>ring: 4px solid #eef2ff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-button.active .icon-box {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #4f46e5;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>.nav-button.active .step-title {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #1e1b4b;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body class="bg-slate-50 text-slate-900 min-h-screen pb-20"&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Header --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header class="bg-white border-b border-slate-200 sticky top-0 z-50 px-6 py-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-5xl mx-auto flex items-center justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-indigo-600 p-2 rounded-lg text-white"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;i data-lucide="hand-heart"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h1 class="text-xl font-bold tracking-tight"&gt;NGO Launchpad&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-[10px] text-indigo-600 font-bold uppercase tracking-widest"&gt;Malaysia Edition&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hidden md:flex items-center gap-2 text-sm text-slate-500 font-medium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;i data-lucide="globe" class="w-4 h-4"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;span&gt;Impact Focused&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Main Content --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;main class="max-w-5xl mx-auto px-6 pt-12"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Hero Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="mb-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4 leading-tight"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>Build Something &lt;span class="text-indigo-600"&gt;Bigger&lt;/span&gt; &lt;br class="hidden md:block"&gt; Than Yourself.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-lg text-slate-600 max-w-2xl leading-relaxed"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>From first idea to official registration—this is your definitive blueprint for starting a high-impact NGO in Malaysia.</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grid md:grid-cols-12 gap-8 items-start"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Step Navigation --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;nav class="md:col-span-4 space-y-3" id="step-nav"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Navigation items will be managed by JS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="switchStep(0)" class="nav-button w-full text-left p-4 rounded-2xl transition-all duration-200 border-2 border-transparent active"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="icon-box p-2 rounded-lg bg-slate-200 text-slate-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="building-2" class="w-5 h-5"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="text-[10px] uppercase font-bold tracking-widest mb-1 opacity-60"&gt;Step 1&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="step-title font-bold text-sm text-slate-700"&gt;Choose Your Path&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="switchStep(1)" class="nav-button w-full text-left p-4 rounded-2xl transition-all duration-200 border-2 border-transparent"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="icon-box p-2 rounded-lg bg-slate-200 text-slate-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="target" class="w-5 h-5"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="text-[10px] uppercase font-bold tracking-widest mb-1 opacity-60"&gt;Step 2&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="step-title font-bold text-sm text-slate-700"&gt;Define the DNA&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="switchStep(2)" class="nav-button w-full text-left p-4 rounded-2xl transition-all duration-200 border-2 border-transparent"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="icon-box p-2 rounded-lg bg-slate-200 text-slate-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="users" class="w-5 h-5"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="text-[10px] uppercase font-bold tracking-widest mb-1 opacity-60"&gt;Step 3&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="step-title font-bold text-sm text-slate-700"&gt;The Founding 7&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="switchStep(3)" class="nav-button w-full text-left p-4 rounded-2xl transition-all duration-200 border-2 border-transparent"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="icon-box p-2 rounded-lg bg-slate-200 text-slate-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="scale" class="w-5 h-5"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="text-[10px] uppercase font-bold tracking-widest mb-1 opacity-60"&gt;Step 4&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="step-title font-bold text-sm text-slate-700"&gt;Legitimacy Check&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="switchStep(4)" class="nav-button w-full text-left p-4 rounded-2xl transition-all duration-200 border-2 border-transparent"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="icon-box p-2 rounded-lg bg-slate-200 text-slate-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="shield-check" class="w-5 h-5"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="text-[10px] uppercase font-bold tracking-widest mb-1 opacity-60"&gt;Step 5&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="step-title font-bold text-sm text-slate-700"&gt;Financial Fortress&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;button onclick="switchStep(5)" class="nav-button w-full text-left p-4 rounded-2xl transition-all duration-200 border-2 border-transparent"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="icon-box p-2 rounded-lg bg-slate-200 text-slate-500"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="trending-up" class="w-5 h-5"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="text-[10px] uppercase font-bold tracking-widest mb-1 opacity-60"&gt;Step 6&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="step-title font-bold text-sm text-slate-700"&gt;Launch &amp; Scale&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/nav&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Step Detail Area --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="md:col-span-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-100 min-h-[500px] flex flex-col"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Content Container --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div id="content-container" class="flex-grow"&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                        </span></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- Step 1: Legal --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="step-content active" id="step-0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-bold rounded-full mb-2"&gt;PHASE 1&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3 class="text-2xl font-bold text-slate-900"&gt;Choose Your Path&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-indigo-500 font-semibold"&gt;ROS vs. SSM&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-gray-600"&gt;The first hurdle is choosing the right legal vessel for your mission.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="grid md:grid-cols-2 gap-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="p-5 border-2 border-indigo-100 rounded-2xl bg-indigo-50/30"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;h4 class="font-bold text-indigo-700 flex items-center gap-2 mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;i data-lucide="check-circle-2" class="w-4 h-4"&gt;&lt;/i&gt; Persatuan (Society)</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;p class="text-sm text-gray-600 leading-relaxed"&gt;Via ROS (Registrar of Societies). Recommended for first-time community groups. Access eROSES for easy online registration.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="p-5 border-2 border-slate-100 rounded-2xl bg-slate-50/30"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;h4 class="font-bold text-slate-700 flex items-center gap-2 mb-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>CLBG / Yayasan</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;p class="text-sm text-gray-600 leading-relaxed"&gt;Via SSM. For major institutional grants, property ownership, or large-scale corporate foundations.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- Step 2: Identity --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="step-content" id="step-1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="inline-block px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-full mb-2"&gt;PHASE 1&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3 class="text-2xl font-bold text-slate-900"&gt;Define the DNA&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-emerald-600 font-semibold"&gt;Identity &amp; Mission&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="space-y-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-gradient-to-r from-emerald-500 to-teal-600 p-6 rounded-2xl text-white shadow-lg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h4 class="font-bold text-lg mb-2"&gt;The Golden Sentence&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p class="italic text-emerald-50 font-medium"&gt;"We exist to help [target group] solve [problem] in [location] through [main activities]."&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="grid grid-cols-2 md:grid-cols-3 gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="flex items-center gap-2 text-gray-700 text-sm font-medium p-3 bg-gray-50 rounded-xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"&gt;&lt;/i&gt; Mission</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="flex items-center gap-2 text-gray-700 text-sm font-medium p-3 bg-gray-50 rounded-xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"&gt;&lt;/i&gt; Vision</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="flex items-center gap-2 text-gray-700 text-sm font-medium p-3 bg-gray-50 rounded-xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"&gt;&lt;/i&gt; Beneficiaries</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="flex items-center gap-2 text-gray-700 text-sm font-medium p-3 bg-gray-50 rounded-xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"&gt;&lt;/i&gt; Geographics</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="flex items-center gap-2 text-gray-700 text-sm font-medium p-3 bg-gray-50 rounded-xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"&gt;&lt;/i&gt; Exclusions</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="flex items-center gap-2 text-gray-700 text-sm font-medium p-3 bg-gray-50 rounded-xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"&gt;&lt;/i&gt; 12-Month Goal</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- Step 3: Team --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="step-content" id="step-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 text-xs font-bold rounded-full mb-2"&gt;PHASE 2&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3 class="text-2xl font-bold text-slate-900"&gt;The Founding 7&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-indigo-500 font-semibold"&gt;Building the Core Team&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-gray-600"&gt;Gather 7 people based on &lt;strong&gt;trust, skills, and reputation&lt;/strong&gt;—not just friendship.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="grid grid-cols-2 lg:grid-cols-4 gap-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="p-3 border border-indigo-100 rounded-xl text-center hover:bg-indigo-50 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="font-bold text-indigo-700 text-sm"&gt;President&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="text-[10px] text-gray-500 uppercase tracking-tighter"&gt;Public Face&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="p-3 border border-indigo-100 rounded-xl text-center hover:bg-indigo-50 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="font-bold text-indigo-700 text-sm"&gt;Secretary&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="text-[10px] text-gray-500 uppercase tracking-tighter"&gt;Compliance&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="p-3 border border-indigo-100 rounded-xl text-center hover:bg-indigo-50 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="font-bold text-indigo-700 text-sm"&gt;Treasurer&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="text-[10px] text-gray-500 uppercase tracking-tighter"&gt;Money&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="p-3 border border-indigo-100 rounded-xl text-center hover:bg-indigo-50 transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="font-bold text-indigo-700 text-sm"&gt;Prog Lead&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="text-[10px] text-gray-500 uppercase tracking-tighter"&gt;Action&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-r-2xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h5 class="text-amber-800 font-bold flex items-center gap-2 mb-1 text-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;i data-lucide="alert-circle" class="w-4 h-4"&gt;&lt;/i&gt; Red Flags</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p class="text-xs text-amber-700 leading-relaxed"&gt;Avoid people who want bank control, have political motives, or demand salaries before work starts. Look for responsibility records (teachers, doctors, community leaders).&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- Step 4: Compliance --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="step-content" id="step-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="inline-block px-3 py-1 bg-purple-50 text-purple-700 text-xs font-bold rounded-full mb-2"&gt;PHASE 2&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3 class="text-2xl font-bold text-slate-900"&gt;Legitimacy Check&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-purple-600 font-semibold"&gt;ROS &amp; Constitution&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="space-y-5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="flex flex-wrap gap-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;span class="px-4 py-1.5 bg-blue-50 text-blue-700 rounded-full text-xs font-bold border border-blue-100"&gt;Founding Meeting&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;span class="px-4 py-1.5 bg-purple-50 text-purple-700 rounded-full text-xs font-bold border border-purple-100"&gt;Constitution Drafting&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;span class="px-4 py-1.5 bg-emerald-50 text-emerald-700 rounded-full text-xs font-bold border border-emerald-100"&gt;eROSES Submission&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-slate-50 p-6 rounded-2xl border border-slate-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h4 class="font-bold text-slate-800 text-sm mb-3"&gt;Submission Checklist:&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;ul class="text-sm text-slate-600 space-y-2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;li class="flex items-center gap-2"&gt;&lt;i data-lucide="file-text" class="w-4 h-4 text-slate-400"&gt;&lt;/i&gt; Proposed NGO Name&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;li class="flex items-center gap-2"&gt;&lt;i data-lucide="file-text" class="w-4 h-4 text-slate-400"&gt;&lt;/i&gt; Founding Meeting Minutes&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;li class="flex items-center gap-2"&gt;&lt;i data-lucide="file-text" class="w-4 h-4 text-slate-400"&gt;&lt;/i&gt; Full Committee List &amp; ICs&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;li class="flex items-center gap-2"&gt;&lt;i data-lucide="file-text" class="w-4 h-4 text-slate-400"&gt;&lt;/i&gt; Membership Fee Details&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- Step 5: Finance --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="step-content" id="step-4"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="inline-block px-3 py-1 bg-blue-50 text-blue-700 text-xs font-bold rounded-full mb-2"&gt;PHASE 3&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3 class="text-2xl font-bold text-slate-900"&gt;Financial Fortress&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-blue-600 font-semibold"&gt;Banking &amp; Trust&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="space-y-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h4 class="font-bold mb-4 flex items-center gap-2 text-slate-800"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;i data-lucide="shield-check" class="w-5 h-5 text-blue-600"&gt;&lt;/i&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>Signatory Protocol</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/h4&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p class="text-sm text-slate-600 mb-6 leading-relaxed"&gt;Never allow one-person control. Use 2 or 3 signatories for all transactions. Required: President, Secretary, and Treasurer signatures.&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                                    </span></p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="space-y-3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="flex justify-between items-center text-xs p-3 bg-slate-50 rounded-xl border border-slate-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;span class="font-medium text-slate-500"&gt;Under RM500&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;span class="font-bold text-slate-800"&gt;Treasurer + Program Lead&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="flex justify-between items-center text-xs p-3 bg-slate-50 rounded-xl border border-slate-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;span class="font-medium text-slate-500"&gt;RM500 - RM3,000&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;span class="font-bold text-slate-800"&gt;President + Treasurer&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;div class="flex justify-between items-center text-xs p-3 bg-indigo-50 rounded-xl border border-indigo-100"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;span class="font-medium text-indigo-600"&gt;Above RM3,000&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                            </span>&lt;span class="font-bold text-indigo-900 underline decoration-indigo-200"&gt;Full Committee Approval&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;!-- Step 6: Scale --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="step-content" id="step-5"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="mb-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="inline-block px-3 py-1 bg-rose-50 text-rose-700 text-xs font-bold rounded-full mb-2"&gt;PHASE 3&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;h3 class="text-2xl font-bold text-slate-900"&gt;Launch &amp; Scale&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;p class="text-rose-600 font-semibold"&gt;The 12-Month Impact&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="space-y-8 relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="absolute left-[7px] top-2 bottom-2 w-0.5 bg-slate-100"&gt;&lt;/div&gt;</p>
+<p class="p2"><span class="Apple-converted-space">                                </span></p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="relative pl-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-indigo-600 ring-4 ring-indigo-50"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h5 class="font-bold text-slate-900 text-sm"&gt;Month 1 - 3: The Foundation&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p class="text-xs text-slate-500 mt-1 leading-relaxed"&gt;Register NGO, open bank account, recruit 20 volunteers, and launch 1 pilot project with documentation.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="relative pl-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-emerald-500 ring-4 ring-emerald-50"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h5 class="font-bold text-slate-900 text-sm"&gt;Month 4 - 6: Traction&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p class="text-xs text-slate-500 mt-1 leading-relaxed"&gt;Publish your first impact report. Document receipts, photos, and beneficiary growth. Recruitment expansion.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;div class="relative pl-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;div class="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-rose-500 ring-4 ring-rose-50"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;h5 class="font-bold text-slate-900 text-sm"&gt;Year 1: Sustainability&lt;/h5&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                    </span>&lt;p class="text-xs text-slate-500 mt-1 leading-relaxed"&gt;Complete 3-6 programs, build a consistent donor base, and hold your first official AGM.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Step Controls Footer --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="mt-8 pt-8 border-t border-slate-100 flex items-center justify-between"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button id="prev-btn" onclick="prevStep()" class="text-sm font-bold text-slate-300 pointer-events-none transition-colors"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>Previous</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex gap-1.5" id="progress-dots"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;!-- Managed by JS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;button id="next-btn" onclick="nextStep()" class="text-indigo-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span&gt;Next Step&lt;/span&gt; &lt;i data-lucide="arrow-right" class="w-4 h-4"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Success Factors Section --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section class="mt-24"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="bg-slate-900 text-white rounded-[2.5rem] p-8 md:p-14 overflow-hidden relative"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="relative z-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="mb-10"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-2xl md:text-3xl font-extrabold mb-3"&gt;NGO Success Factors&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-slate-400 text-sm md:text-base max-w-xl"&gt;A successful NGO is built on accountability and real outcomes, not just intentions.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10 backdrop-blur-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="shield-check" class="w-5 h-5 text-emerald-400"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-sm font-semibold"&gt;Transparency&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10 backdrop-blur-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="users" class="w-5 h-5 text-blue-400"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-sm font-semibold"&gt;No Founder Ego&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10 backdrop-blur-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="trending-up" class="w-5 h-5 text-rose-400"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-sm font-semibold"&gt;Measurable Impact&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10 backdrop-blur-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="file-text" class="w-5 h-5 text-amber-400"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-sm font-semibold"&gt;Strong Documentation&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10 backdrop-blur-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="hand-heart" class="w-5 h-5 text-indigo-400"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-sm font-semibold"&gt;Diverse Funding&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="flex items-center gap-4 bg-white/5 p-4 rounded-2xl border border-white/10 backdrop-blur-md"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;i data-lucide="globe" class="w-5 h-5 text-teal-400"&gt;&lt;/i&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-sm font-semibold"&gt;Active Community&lt;/span&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="mt-12 p-6 bg-indigo-600/20 rounded-3xl border border-indigo-500/30 max-w-2xl"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;p class="text-sm md:text-base text-indigo-100 italic leading-relaxed font-medium"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                            </span>"Choose your first 7 people slowly. The wrong founding committee can destroy an NGO faster than a lack of money."</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Abstract Glow --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="absolute -bottom-24 -right-24 w-80 h-80 bg-indigo-600/20 rounded-full blur-[100px]"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="absolute -top-24 -left-24 w-64 h-64 bg-emerald-600/10 rounded-full blur-[80px]"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Footer Credits --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;footer class="mt-20 text-center text-slate-400 text-[10px] md:text-xs px-6 uppercase tracking-widest font-bold"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;© 2024 Malaysia NGO Launchpad. Based on ROS/JPPM &amp; LHDN Guidelines.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="mt-1"&gt;Consult legal and financial experts before final submission.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Mobile Navigation Bar --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-lg px-6 py-3 rounded-full shadow-2xl border border-slate-100 flex items-center gap-5 z-50 md:hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="mobile-counter" class="text-[10px] font-black text-indigo-600 w-10"&gt;01/06&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex gap-1.5" id="mobile-dots"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Managed by JS --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let currentStep = 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const totalSteps = 6;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function init() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>lucide.createIcons();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateUI();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderDots();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function renderDots() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const container = document.getElementById('progress-dots');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const mobileContainer = document.getElementById('mobile-dots');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>container.innerHTML = '';</p>
+<p class="p1"><span class="Apple-converted-space">            </span>mobileContainer.innerHTML = '';</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>for (let i = 0; i &lt; totalSteps; i++) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const dot = document.createElement('div');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>dot.className = `h-1.5 rounded-full transition-all duration-300 ${i === currentStep ? 'w-8 bg-indigo-600' : 'w-2 bg-slate-200'}`;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>container.appendChild(dot.cloneNode(true));</p>
+<p class="p1"><span class="Apple-converted-space">                </span>mobileContainer.appendChild(dot);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateUI() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update Navigation Buttons</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const navButtons = document.querySelectorAll('.nav-button');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>navButtons.forEach((btn, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (index === currentStep) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>btn.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>btn.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update Content Blocks</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const contents = document.querySelectorAll('.step-content');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>contents.forEach((content, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (index === currentStep) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>content.classList.add('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>content.classList.remove('active');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Update Pagination Controls</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const prevBtn = document.getElementById('prev-btn');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const nextBtn = document.getElementById('next-btn');</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (currentStep === 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>prevBtn.classList.add('text-slate-300', 'pointer-events-none');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>prevBtn.classList.remove('text-slate-500', 'hover:text-indigo-600');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>prevBtn.classList.remove('text-slate-300', 'pointer-events-none');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>prevBtn.classList.add('text-slate-500', 'hover:text-indigo-600');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (currentStep === totalSteps - 1) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>nextBtn.querySelector('span').innerText = "Start Over";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>nextBtn.querySelector('span').innerText = "Next Step";</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>// Mobile Counter</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('mobile-counter').innerText = `0${currentStep + 1}/06`;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>renderDots();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>window.scrollTo({ top: 200, behavior: 'smooth' });</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function switchStep(index) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>currentStep = index;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateUI();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function nextStep() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (currentStep &lt; totalSteps - 1) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>currentStep++;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>currentStep = 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateUI();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function prevStep() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>if (currentStep &gt; 0) {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>currentStep--;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>updateUI();</p>
+<p class="p1"><span class="Apple-converted-space">            </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>window.onload = init;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
